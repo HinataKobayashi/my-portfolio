@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="5styles.css" />
+  </head>
+  <body class="about">
+    <header>
+      <h1>About Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <p>My name is Hinata Kobayashi.</p>
+      <p>I am from Japan!</p>
+      <p>My favorite color is yellow, not neon yellow!</p>
+      <p>I love taking naps and my dog!</p>
+
+      <img
+        src="https://lh3.googleusercontent.com/pw/AP1GczMIsXrYdwsStsOkMU3hOXuKMWJJqllQ9KEByJvhmBFCGLnSjq_hAfygW8JrHmRfXVLQ-4m0fkH3j0OvfFy7xiULCQVKkS6ORurnUUExvdJ91wU0WevNjMusj6fMIfx49NwUTJ_gr-2V2vZ5juQZUwDv8M9hNDNOu8F_AFftbBa0C4nd2uo_St1FQkPTHyO52k079_h69d6_6WSWlHiFIcDsHKQAyjVi_SFTfYns4ithpXXpjkz2_2Whpdg-qRB8h7RmWPOzlDW-HG7ADX4F8OI9ONzmJ68dpKc97OjPXKLrMdKfm9fRo8ScwsrmLK6iY1p6ZQG-TI1gbqmmsQ9nORC-CibfHJDOLKTq0UetWjLW3UE9pJnle2zOPJSka3kiGQ1K_ZW2YuJXFbe9zgN4rpnouAGb-4f9agtwR7zx95oCluhEWGYiLnbKTjnwlIpvZrjyaRiaqlh0hOqwDwHKEMNB_sIiv2MH2JsJzFnOJSS6gRW0fhoRGiQct3qorEd_7hPtXbnE1hHYYa4QDZ9yRgg64KaOhIlMNi-dnjs-wDfSZonXHLb5bjLnoMcfaAtfaAubwSCzep7zQnbDftdx3zLZiOoPT-eCxvDX1CrYi9GAtGcLFV6a0CP74GIZ6aVh0Rcgg1pmraVq7jIEPpVrxsk4bToUoUZrKDr4X8q_NlRCFGLThxzSelNHfb4qEUykusPVX5nFnmbXtV4NWDeYxap_MOefMuQVSjctLvBlAkKXCHRnz9WG4KOqFNIIuBCSt_aYwocgCHijFEuf7NW8logRQaVJIYcNN60kOdxVMkMt02-qiMSv2YpKiW90rSiPlBQfHC0qk2ylR4Pl41iMj0uodXvPu7piSP3yc7ZX3Q4iXv-FisNg10sFpdeMg-3awyah_ndhVZQBpUywvzD1oc8pDyZ2oiSElFGdIE3HsxknclX0va8jIGM5WrglJGs=w1708-h1140-s-no?authuser=1"
+        alt="Description of Image"
+        style="width: 100%; max-width: 600px; height: auto"
+      />
+    </section>
+    <!-- Add your content here -->
+
+    <script src="script.js"></script>
+    <button onclick="alert('I hope you will have a great day!')">
+      Click Me!
+    </button>
+    <script>
+      function validateForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Simple validation for empty fields
+        if (!name || !email || !message) {
+          alert("Please fill in all fields.");
+          return false; // Prevent form submission
+        }
+
+        // Optional: Validate email format
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          return false; // Prevent form submission
+        }
+
+        // Optional: Successful validation message
+        alert("Your message has been sent!");
+        return true; // Allow form submission (you can replace this with actual form submission code)
+      }
+    </script>
+  </body>
+</html>

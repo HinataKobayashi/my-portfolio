@@ -1,0 +1,313 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy; /* Playful font */
+}
+.h1 {
+  text-decoration: underline;
+}
+body {
+  scroll-behavior: smooth;
+}
+#hero {
+  text-align: center;
+}
+/* Background colors for different pages */
+body.home {
+  background: linear-gradient(135deg, #ffebee); /* Home page gradient */
+  background-color: #ccedfc;
+}
+
+body.projects {
+  background: linear-gradient(
+    135deg,
+    #e1f5fe,
+    #b3e5fc
+  ); /* Projects page gradient */
+}
+
+body.about {
+  background: linear-gradient(
+    135deg,
+    #e8f5e9,
+    #c8e6c9
+  ); /* About page gradient */
+}
+
+body.skills {
+  background: linear-gradient(
+    135deg,
+    #fff3e0,
+    #ffe0b2
+  ); /* Skills page gradient */
+}
+
+body.contact {
+  background: linear-gradient(
+    135deg,
+    #fce4ec,
+    #f8bbd0
+  ); /* Contact page gradient */
+}
+#about {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Optional: full viewport height */
+}
+#gallery {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.slide img {
+  width: 80%; /* Make the image responsive */
+  max-width: 400px;
+  border-radius: 10px; /* Optional: rounded corners */
+  transition: transform 0l5s ease;
+}
+
+button {
+  position: fixed;
+  bottom: 20px; /* Adjusts the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the button horizontally */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(181, 255, 250); /* You can choose your favorite color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#about img {
+  max-width: 100%; /* Ensure image scales responsively */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 0; /* Optional: adds margin above and below the image */
+}
+
+#hero {
+  text-align: center;
+}
+.home title {
+  font-size: 30px;
+}
+/* Header Styles */
+header {
+  background-color: #ff8a80; /* Cute header color */
+  padding: 20px;
+  text-align: center;
+}
+/* Navigation Style */
+nav ul {
+  list-style: none; /* Remove default list style */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Display navigation items inline */
+  margin: 0 15px; /* Spacing between navigation items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding around links */
+  border-radius: 20px; /* More rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+  color: black; /* Light background on hover */
+  transform: scale(1.1); /* Slight grow effect on hover */
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  padding: 50px;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+  display: flex;
+  gap: 20px; /* Add space between items */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-item {
+  text-align: center;
+  width: 200px; /* Adjust width */
+  margin-bottom: 20px; /* Add spacing between items */
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Smooth transition */
+  /* Adding some padding and border-radius for aesthetics */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.portfolio-item h3 {
+  text-decoration: underline;
+}
+.portfolio-item h3,
+.portfolio-item p {
+  margin: 10px 0 0;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Zoom in the image on hover */
+  background-color: #e0e0e0; /* Change background color on hover */
+  z-index: 1; /* Bring it to the front */
+}
+
+.portfolio-item:hover h3,
+.portfolio-item:hover p {
+  transform: translateY(0); /* Bring up the description on hover */
+}
+#portfolio {
+  padding: 50px;
+  background-color: rgb(
+    209,
+    255,
+    209
+  ); /* Light aquamarine background for portfolio section */
+  text-align: center; /* Center text */
+  border-radius: 10px; /* Optional: add rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: add a soft shadow */
+}
+
+/* Skills Section */
+.skills-section {
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.skill {
+  margin-bottom: 50px 0 10px;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skill-level {
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+.design-skill {
+  background-color: #ffb8a6;
+  width: 100%; /* Adjust this value for skill percentage */
+}
+
+.colortheory-skill {
+  background-color: #b1c1ff;
+  width: 35%; /* Adjust this value for skill percentage */
+}
+
+.layout-skill {
+  background-color: #fff6bd;
+  width: 95%; /* Adjust this value for skill percentage */
+}
+
+#skills {
+  background-color: #e2ffe5; /* Background color */
+  text-align: center; /* Center text */
+}
+
+.skills-container {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items */
+}
+
+.skill {
+  width: 80%; /* Skill width */
+  margin-bottom: 20px; /* Spacing */
+}
+
+.progress-bar {
+  width: 100%; /* Full width */
+  background-color: #ffd54f; /* Background color */
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+}
+
+.progress {
+  height: 30px; /* Progress height */
+  background-color: #66bb6a; /* Progress color */
+  line-height: 30px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ff7043; /* Background color */
+  text-align: center; /* Center text */
+  text-decoration: underline;
+}
+
+form {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items */
+}
+
+form input,
+form textarea {
+  width: 50%; /* Input width */
+  padding: 10px; /* Padding */
+  margin: 10px 0; /* Spacing */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}

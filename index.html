@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="5styles.css" />
+  </head>
+  <body class="home">
+    <header>
+      <h1 class="h1"><strong>My Portfolio</strong></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h2>Welcome to My Portfolio!</h2>
+      <p>Thank you for visiting my website!</p>
+      <p>I hope you will enjoy it!</p>
+    </section>
+    <script>
+      // Function to display a welcome message
+      function showWelcomeMessage() {
+        alert("Welcome to my portfolio! I hope you will love it!");
+      }
+
+      // Log a message to the console when the page loads
+      console.log("Page has been loaded successfully.");
+
+      // Call the welcome message function when the page loads
+      window.onload = showWelcomeMessage;
+    </script>
+  </body>
+</html>
